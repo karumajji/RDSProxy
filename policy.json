@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "rds:*",
+                "s3:*",
+                "ssm:*",
+                "kms:*",
+                "secretsmanager:*",
+                "rds-db:connect"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ]
+}
