@@ -51,7 +51,7 @@ while True:
         conn = pymysql.connect(host=args.endpoint, user=args.username, password=args.password, database='information_schema', autocommit=True, connect_timeout=1)
 
         # Query status
-        sql_command = "SELECT @@read_only, @@hostname, @@innodb_version;
+        sql_command = "SELECT @@read_only, @@hostname, @@innodb_version;"
        
         # Run the query
         with conn.cursor() as cursor:
